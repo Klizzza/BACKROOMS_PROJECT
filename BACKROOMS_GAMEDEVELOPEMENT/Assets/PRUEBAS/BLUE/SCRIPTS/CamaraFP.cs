@@ -15,7 +15,7 @@ public class CamaraFP : MonoBehaviour
 
     void Start()
     {
-        camera = transform.Find("Camera");
+        camera = Camera.main.transform;
         Cursor.lockState = CursorLockMode.Locked;
     }
 
@@ -32,13 +32,15 @@ public class CamaraFP : MonoBehaviour
 
         if (horiz != 0)
         {
-            transform.Rotate(Vector3.up * horiz * sensibilidad.x);
+            //transform.Rotate(Vector3.up * horiz * sensibilidad.x);
+            float angulo = camera.localEulerAngles.y + horiz * sensibilidad.x;
+            camera.localEulerAngles = new Vector3(camera.localEulerAngles.x, angulo, 0);
         }
 
         if (vert != 0)
         {
             float angulo = camera.localEulerAngles.x - vert * sensibilidad.y;
-            camera.localEulerAngles = Vector3.right * angulo;
+            camera.localEulerAngles = new Vector3(angulo, camera.localEulerAngles.y, 0);
         }
     }
 

@@ -9,13 +9,15 @@ public class CamaraFP : MonoBehaviour
     // Esc para que aparezca de nuevo el cursor
 
     private Transform camera;
+    private Transform orientacion;
+    private float horizonX;
+    private float vertY;
     public Vector2 sensibilidad;
-    private float horiz;
-    private float vert;
 
     void Start()
     {
         camera = Camera.main.transform;
+        // Indica que la cámara a la que nos referimos es la cámara principal de la escena
         Cursor.lockState = CursorLockMode.Locked;
     }
 
@@ -27,19 +29,19 @@ public class CamaraFP : MonoBehaviour
 
     private void MouseComp()
     {
-        horiz = Input.GetAxis("Mouse X");
-        vert = Input.GetAxis("Mouse Y");
+        horizonX = Input.GetAxis("Mouse X");
+        vertY = Input.GetAxis("Mouse Y");
 
-        if (horiz != 0)
+        if (horizonX != 0)
         {
             //transform.Rotate(Vector3.up * horiz * sensibilidad.x);
-            float angulo = camera.localEulerAngles.y + horiz * sensibilidad.x;
+            float angulo = camera.localEulerAngles.y + horizonX * sensibilidad.x;
             camera.localEulerAngles = new Vector3(camera.localEulerAngles.x, angulo, 0);
         }
 
-        if (vert != 0)
+        if (vertY != 0)
         {
-            float angulo = camera.localEulerAngles.x - vert * sensibilidad.y;
+            float angulo = camera.localEulerAngles.x - vertY * sensibilidad.y;
             camera.localEulerAngles = new Vector3(angulo, camera.localEulerAngles.y, 0);
         }
     }

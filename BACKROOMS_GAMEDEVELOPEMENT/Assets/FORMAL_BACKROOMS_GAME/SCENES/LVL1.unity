@@ -1706,7 +1706,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a15f590423e55ac4b90e0857b1ffd5b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  walking_speed: 10
+  walking_speed: 350
   cam: {fileID: 340849615}
 --- !u!65 &1835456117
 BoxCollider:

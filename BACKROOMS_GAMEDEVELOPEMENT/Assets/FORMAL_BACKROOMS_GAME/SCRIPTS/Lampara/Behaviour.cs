@@ -3,14 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class On_Off : MonoBehaviour
+public class Behaviour : MonoBehaviour
 {
     [SerializeField] Light flashlight;
     [SerializeField] TMP_Text no_bateria_txt;
     [SerializeField] TMP_Text bateria_restante_txt;
     private bool encendido;
     private float bateria_restante = 5;
-    private float no_baterias = 1;
+    public float no_baterias = 1;
 
     // Start is called before the first frame update
     void Start()

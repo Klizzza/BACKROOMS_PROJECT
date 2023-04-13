@@ -8,7 +8,7 @@ public class Behaviour : MonoBehaviour
     [SerializeField] Light flashlight;
     [SerializeField] TMP_Text no_bateria_txt;
     [SerializeField] TMP_Text bateria_restante_txt;
-    private bool encendido;
+    public bool encendido;
     private float bateria_restante = 20;
     public float no_baterias = 1;
 

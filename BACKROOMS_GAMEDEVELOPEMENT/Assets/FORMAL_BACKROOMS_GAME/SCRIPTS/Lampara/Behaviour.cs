@@ -9,7 +9,7 @@ public class Behaviour : MonoBehaviour
     [SerializeField] TMP_Text no_bateria_txt;
     [SerializeField] TMP_Text bateria_restante_txt;
     private bool encendido;
-    private float bateria_restante = 5;
+    private float bateria_restante = 20;
     public float no_baterias = 1;
 
     // Start is called before the first frame update
@@ -66,9 +66,9 @@ public class Behaviour : MonoBehaviour
             encendido = false;
             bateria_restante = 0;
         }
-        if (bateria_restante >= 10)
+        if (bateria_restante >= 100)
         {
-            bateria_restante = 10;
+            bateria_restante = 100;
         }
     }
 
@@ -77,7 +77,7 @@ public class Behaviour : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.R) && no_baterias >= 1)
         {
             no_baterias -= 1;
-            bateria_restante += 5;
+            bateria_restante += 20;
         }
 
         if (Input.GetKeyDown(KeyCode.R) && no_baterias == 0)

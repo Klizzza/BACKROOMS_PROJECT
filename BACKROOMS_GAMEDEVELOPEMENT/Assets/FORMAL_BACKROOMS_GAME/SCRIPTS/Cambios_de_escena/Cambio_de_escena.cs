@@ -15,7 +15,7 @@ public class Cambio_de_escena : MonoBehaviour
     }
     public void Boton_a_LVL1()
     {
-        SceneManager.LoadScene(4);
+        SceneManager.LoadScene(6);
     }
     public void Boton_a_LVL2()
     {

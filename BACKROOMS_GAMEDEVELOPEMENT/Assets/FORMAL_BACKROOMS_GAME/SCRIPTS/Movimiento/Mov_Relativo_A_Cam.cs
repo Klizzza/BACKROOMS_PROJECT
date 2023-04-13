@@ -8,7 +8,7 @@ public class Mov_Relativo_A_Cam : MonoBehaviour
     private Rigidbody rigid_Bod;
     private float inputX;
     private float inputY;
-    [SerializeField] float walking_speed = 350;
+    [SerializeField] float walking_speed = 0.1f;
     [SerializeField] Transform cam;
 
     // Start is called before the first frame update

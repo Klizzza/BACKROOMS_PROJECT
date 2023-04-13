@@ -33,7 +33,7 @@ public class Behaviour : MonoBehaviour
         {
             if (encendido == false)
             {
-                flashlight.intensity = 400000;
+                flashlight.intensity = 8;
                 encendido = true;
                 return;
             }

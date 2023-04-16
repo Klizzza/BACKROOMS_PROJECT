@@ -4,5 +4,26 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/FORMAL_BACKROOMS_GAME/SCENES/Menu.unity
+    guid: 5ccc6448a2875cd4f87e390cce4d896b
+  - enabled: 1
+    path: Assets/FORMAL_BACKROOMS_GAME/SCENES/Cambio_de_nivel.unity
+    guid: f70cfebc025ddb948a7013dd7b2847ce
+  - enabled: 1
+    path: Assets/FORMAL_BACKROOMS_GAME/SCENES/Controles.unity
+    guid: e7d05c2ba2eada641b560339a4141cfe
+  - enabled: 1
+    path: Assets/FORMAL_BACKROOMS_GAME/SCENES/Game Over.unity
+    guid: 7eaa4b60203430d46b219a9459fc6891
+  - enabled: 1
+    path: Assets/FORMAL_BACKROOMS_GAME/SCENES/LVL1.unity
+    guid: 9675ccbb586c27a4b9721fe8835c8e69
+  - enabled: 1
+    path: Assets/FORMAL_BACKROOMS_GAME/SCENES/LVL2.unity
+    guid: 508fc7a417aca014487e18b0752b4a42
+  - enabled: 1
+    path: Assets/FORMAL_BACKROOMS_GAME/SCENES/SCALE.unity
+    guid: 9f1e420753e51d04fad43289331021e8
   m_configObjects: {}

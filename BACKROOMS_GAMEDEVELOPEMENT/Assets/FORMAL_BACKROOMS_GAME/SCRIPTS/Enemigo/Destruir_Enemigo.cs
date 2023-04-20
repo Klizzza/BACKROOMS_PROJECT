@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Destruir_Enemigo : MonoBehaviour
 {
+    GameObject respawn;
     private bool en_Rango;
     private float destruction_tempo = 3;
     public bool on;
@@ -19,6 +20,7 @@ public class Destruir_Enemigo : MonoBehaviour
     void Update()
     {
         Activador();
+        Find();
         Timing();
         Debug.Log(destruction_tempo);
     }
@@ -43,6 +45,7 @@ public class Destruir_Enemigo : MonoBehaviour
         if (en_Rango == true && on == true && destruction_tempo <= 0)
         {
             Destroy(gameObject);
+            respawn.GetComponent<Respawn>().vivo = false;
         }
     }
 
@@ -52,5 +55,10 @@ public class Destruir_Enemigo : MonoBehaviour
         {
             destruction_tempo -= 1 * Time.deltaTime;
         }
+    }
+
+    void Find()
+    {
+        respawn = GameObject.Find("Respawn");
     }
 }

@@ -14505,7 +14505,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.8373046, y: 2.3960717, z: 1.0913451}
   m_Center: {x: -0.008808374, y: 1.0093151, z: -0.027211785}
---- !u!114 &1511694679
+--- !u!114 &1511694682
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

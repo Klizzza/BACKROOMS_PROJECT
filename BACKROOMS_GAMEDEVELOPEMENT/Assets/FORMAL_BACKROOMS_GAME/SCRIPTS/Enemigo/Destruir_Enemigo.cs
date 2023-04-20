@@ -5,6 +5,7 @@ using UnityEngine;
 public class Destruir_Enemigo : MonoBehaviour
 {
     private bool en_Rango;
+    private float destruction_tempo = 3;
     public bool on;
 
     // Start is called before the first frame update
@@ -18,6 +19,8 @@ public class Destruir_Enemigo : MonoBehaviour
     void Update()
     {
         Activador();
+        Timing();
+        Debug.Log(destruction_tempo);
     }
 
     private void OnTriggerEnter(Collider other)
@@ -37,9 +40,17 @@ public class Destruir_Enemigo : MonoBehaviour
 
     void Activador()
     {
-        if (en_Rango == true && on == true)
+        if (en_Rango == true && on == true && destruction_tempo <= 0)
         {
             Destroy(gameObject);
+        }
+    }
+
+    void Timing()
+    {
+        if (en_Rango == true && on == true)
+        {
+            destruction_tempo -= 1 * Time.deltaTime;
         }
     }
 }

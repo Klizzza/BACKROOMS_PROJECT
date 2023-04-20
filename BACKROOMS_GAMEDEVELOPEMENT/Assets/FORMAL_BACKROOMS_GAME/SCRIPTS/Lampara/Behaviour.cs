@@ -8,7 +8,8 @@ public class Behaviour : MonoBehaviour
     [SerializeField] Light flashlight;
     [SerializeField] TMP_Text no_bateria_txt;
     [SerializeField] TMP_Text bateria_restante_txt;
-    public bool encendido;
+    [SerializeField] GameObject cube;
+    private bool encendido;
     private float bateria_restante = 20;
     public float no_baterias = 1;
 
@@ -35,6 +36,7 @@ public class Behaviour : MonoBehaviour
             {
                 flashlight.intensity = 8;
                 encendido = true;
+                cube.GetComponent<Destruir_Enemigo>().on = true;
                 return;
             }
 
@@ -43,6 +45,7 @@ public class Behaviour : MonoBehaviour
 
                 flashlight.intensity = 0;
                 encendido = false;
+                cube.GetComponent<Destruir_Enemigo>().on = true;
                 return;
             }
         }

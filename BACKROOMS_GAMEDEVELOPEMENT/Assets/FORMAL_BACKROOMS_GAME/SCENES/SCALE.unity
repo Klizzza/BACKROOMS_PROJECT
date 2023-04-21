@@ -10896,6 +10896,24 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!1 &1123788870 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7753155662203920408, guid: 46cc7191501ee0041bfc7339771c1f71, type: 3}
+  m_PrefabInstance: {fileID: 7447216755419793327}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1123788871
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1123788870}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2dd9965facbeb84ab1892111973ff05, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  "NumDa\xF1o": 100
 --- !u!1001 &1131395981
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18692,6 +18710,7 @@ GameObject:
   - component: {fileID: 1828673367}
   - component: {fileID: 1828673368}
   - component: {fileID: 1828673369}
+  - component: {fileID: 1828673370}
   m_Layer: 0
   m_Name: Capsule
   m_TagString: Reach
@@ -18822,6 +18841,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walking_speed: 5.5
   cam: {fileID: 340849615}
+--- !u!114 &1828673370
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1828673362}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f484693decbc48a49a2cc3fefd79ece7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Salud: 100
+  SaludMax: 100
 --- !u!1 &1832824147
 GameObject:
   m_ObjectHideFlags: 0

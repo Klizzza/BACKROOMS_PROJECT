@@ -20,7 +20,7 @@ public class Cambio_de_escena : MonoBehaviour
     public void Boton_a_LVL2()
     {
         SceneManager.LoadScene(5);
-    } 
+    }
 
     public void Boton_Salir()
     {

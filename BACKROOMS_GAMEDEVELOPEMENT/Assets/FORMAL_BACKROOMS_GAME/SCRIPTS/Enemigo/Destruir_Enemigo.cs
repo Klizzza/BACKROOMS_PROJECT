@@ -6,7 +6,7 @@ public class Destruir_Enemigo : MonoBehaviour
 {
     GameObject respawn;
     private bool en_Rango;
-    private float destruction_tempo = 3;
+    private float destruction_tempo = 2;
     public bool on;
 
     // Start is called before the first frame update

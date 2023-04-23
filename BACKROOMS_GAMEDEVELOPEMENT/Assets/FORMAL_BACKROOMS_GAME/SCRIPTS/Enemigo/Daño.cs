@@ -8,7 +8,7 @@ public class Daño : MonoBehaviour
     
     private void OnTriggerEnter (Collider other)
     {
-        if (other.CompareTag ("Reach") && other.GetComponent<Salud_Prota>())
+        if (other.CompareTag ("Reach") && other.GetComponent<Salud_Prota>() )
         {
             other.GetComponent<Salud_Prota>().RecibirDaño(NumDaño);
 

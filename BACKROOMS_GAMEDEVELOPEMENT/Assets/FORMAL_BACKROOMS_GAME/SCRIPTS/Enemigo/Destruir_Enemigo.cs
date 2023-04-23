@@ -6,7 +6,7 @@ public class Destruir_Enemigo : MonoBehaviour
 {
     GameObject respawn;
     private bool en_Rango;
-    private float destruction_tempo = 2;
+    private float destruction_tempo = 0.5f;
     public bool on;
 
     // Start is called before the first frame update
@@ -27,14 +27,14 @@ public class Destruir_Enemigo : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Reach")
+        if (other.gameObject.tag == "Destroy")
         {
             en_Rango = true;
         }
     }
     private void OnTriggerExit(Collider other)
     {
-        if (other.gameObject.tag == "Reach")
+        if (other.gameObject.tag == "Destroy")
         {
             en_Rango = false;
         }

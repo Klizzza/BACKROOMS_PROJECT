@@ -19,7 +19,7 @@ public class Salud_Prota : MonoBehaviour
 
         if (Salud <= 0)
         {
-            SceneManager.LoadScene(3);
+            SceneManager.LoadScene(2);
             Destroy(gameObject);
         }
 

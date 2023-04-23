@@ -21,7 +21,7 @@ public class Cambio_nivel : MonoBehaviour
     {
         if (other.gameObject.tag == "Reach")
         {
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene(0);
         }
     }
 

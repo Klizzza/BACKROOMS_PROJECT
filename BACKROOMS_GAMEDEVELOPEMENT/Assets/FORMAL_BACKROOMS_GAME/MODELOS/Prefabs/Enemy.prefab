@@ -53,7 +53,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 265462e5e8a68fd44a6795ce010a8b05, type: 3}
       propertyPath: m_Name
-      value: Parasite L Starkie
+      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 5866666021909216657, guid: 265462e5e8a68fd44a6795ce010a8b05, type: 3}
       propertyPath: m_Controller
@@ -129,3 +129,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   on: 0
+--- !u!114 &8216622912083094417
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2732647217930944160}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2dd9965facbeb84ab1892111973ff05, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  "NumDa\xF1o": 100

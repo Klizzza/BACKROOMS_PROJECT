@@ -13,7 +13,7 @@ public class Salud_Prota : MonoBehaviour
 
     }
 
-    public void RecibirDaño (float daño)
+    public void RecibirDaño(float daño = 100)
     {
         Salud -= daño;
 
